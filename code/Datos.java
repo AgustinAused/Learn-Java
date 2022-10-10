@@ -22,5 +22,16 @@ public class Datos {
     //character
     char caracter = 'a';
     System.out.println("el character es:" + caracter);
+    //booleans
+    boolean decicion = true;
+    System.out.println("el boleano es:" + decicion);
+    //No primitives dates
+    // numeerico no primitivo
+    integer num = null;
+    System.out.println("el valor es:" + num);
+    //cadena de caracteres
+    String cad = "hola como estas";
+    System.out.println(cad);
+
     }
 }
