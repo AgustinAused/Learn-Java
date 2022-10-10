@@ -3,14 +3,10 @@ public class Datos {
         //dates primitives
         //enters
         public static void main(String[] args) {
-        //byte (-128 a 127)
-        byte entero = 12;
-        //short (-32768 a 32767)
-        short x = 2899;
-        //int (2 mil mill)
-        int num = 2000000000;
-        //long()
-        long num2 = 2000000000 ;
+        byte entero = 12;//byte (-128 a 127)
+        short x = 2899;//short (-32768 a 32767)
+        int num = 2000000000;//int (2 mil mill)
+        long num2 = 2000000000 ;//long()
         System.out.println("numero byte es: " + entero);
         System.out.println("numero short es: "+ x);
         System.out.println("numero integer es: "+ num);
@@ -26,13 +22,14 @@ public class Datos {
         boolean decicion = true;
         System.out.println("el boleano es:" + decicion);
         //No primitives dates
-        // numeerico no primitivo
-        Integer inv = null;
+
+        Integer inv = null; //valor numerico no primitivo
         System.out.println("el valor es:" + inv);
-        //cadena de caracteres
-        String cad = "hola como estas";
+
+        String cad = "hola como estas"; //cadena de caracteres
         System.out.println(cad);
-        // constantes
+
+        final int cons = 10; // declaracion de constantes
 
     }
 }
