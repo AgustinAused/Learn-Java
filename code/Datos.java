@@ -30,6 +30,7 @@ public class Datos {
         System.out.println(cad);
 
         final int cons = 10; // declaracion de constantes
+        System.out.println(cons);
 
     }
 }
