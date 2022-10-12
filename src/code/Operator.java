@@ -22,6 +22,17 @@ public class Operator {
         System.out.println("la division es: "+ div);
         resto = numero1 % numero2;
         System.out.println("el resto es: "+ resto);
+        // operadores combinados
+        suma += 5;
+        System.out.println("la suma con op combinado es: "+ suma);
+        resta -= 4;
+        System.out.println("la resta conmbinada es: "+ resta);
+        multi *=  numero2;
+        System.out.println("la multiplicacion combinada es: "+ multi);
+        div /=  numero1;
+        System.out.println("la division combinada es: "+ div);
+        resto %= numero2;
+        System.out.println("el resto combinada es: "+ resto);
 
 
 
