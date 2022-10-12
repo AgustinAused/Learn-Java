@@ -32,7 +32,7 @@ public class Operator {
         div /=  numero1;
         System.out.println("la division combinada es: "+ div);
         resto %= numero2;
-        System.out.println("el resto combinada es: "+ resto);
+        System.out.println("el resto combinado es: "+ resto);
 
 
 
