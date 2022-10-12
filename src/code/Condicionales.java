@@ -1,16 +1,18 @@
 package code;
-
+/*imports*/
 import javax.swing.*;
 
+//Clases
 public class Condicionales {
     public static void main(String[] args) {
         int numero, dato = 5;
         numero = Integer.parseInt(JOptionPane.showInputDialog("ingreesar un numero"));
-        if (numero == dato){
+        if (numero == dato){// condicional de forma taradicional
             JOptionPane.showMessageDialog(null, "numero ingresado es el mismo que el dato");
         }else{
             JOptionPane.showMessageDialog(null, "el numero ingresado es diferente que el dato");
         }
+        String result = (numero < 18) ? "Good day." : "Good evening.";
         switch (numero){
             case 1:JOptionPane.showMessageDialog(null ,"el numero digitado es 1");
                 break;
