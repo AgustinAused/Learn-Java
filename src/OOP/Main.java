@@ -8,6 +8,8 @@ public class Main {
         myObj2.x = 40;
         System.out.println(myObj1.x);
         System.out.println(myObj2.x);
-        myObj1.funcion();
+        myObj2.funcion();
+        myObj2.fullThrottle();
+        myObj2.speed(200);
     }
 }
