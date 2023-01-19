@@ -28,7 +28,7 @@ public class Servlet extends HttpServlet{
         out.print("<p>Uri Solicitada: "+ uri +"</p>");
         
         
-        // imprimir todos los cabeceros del header
+        // imprimir todos los cabeceros 
         Enumeration cabeceros = request.getHeaderNames();
         while (cabeceros.hasMoreElements()) {
             String nombreCabecero = (String) cabeceros.nextElement();
