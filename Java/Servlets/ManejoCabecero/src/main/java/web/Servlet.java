@@ -2,6 +2,7 @@ package web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
@@ -25,6 +26,17 @@ public class Servlet extends HttpServlet{
         out.print("<br>");
         String uri = request.getRequestURI();
         out.print("<p>Uri Solicitada: "+ uri +"</p>");
+        
+        
+        // imprimir todos los cabeceros del header
+        Enumeration cabeceros = request.getHeaderNames();
+        while (cabeceros.hasMoreElements()) {
+            String nombreCabecero = (String) cabeceros.nextElement();
+            out.print("<p><b>" + nombreCabecero + "</b></p>");
+            out.print(request.getHeader(nombreCabecero));
+            out.print("<br>");
+        }
+        
         out.print("</body>");
         out.print("</html>");
         out.close();
