@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="recursos/style.css">
+        <script type="text/javascript" src="recursos/funciones.js"></script>
+    </head>
+    <body>
+        <form name="formulario1" action="/ManejoFormulariosHTML/Servlets" method="post" onsubmit="return validarForm(this)">
+            <input type="hidden" name="oculto" value="valorOculto">
+
+            <table width="200" id="enfacis-columna">
+                <caption>
+                    formulario Registro de Datos 
+                </caption>
+                <tr>
+                    <td class="columna">
+                        Usuario: (*)
+                    </td>
+                    <td>
+                        <input type="text" name="usuario" placeholder="Escribir usuario " onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Password: (*)
+                    </td>
+                    <td>
+                        <input type="password" name="password" placeholder="Escribir Contraseña " onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Tecnologias de internet: (*)
+                    </td>
+                    <td>
+                        Java <input type="checkbox" name="tecnologias" value="java">
+                        <br>
+                        .Net <input type="checkbox" name="tecnologias" value="net">
+                        <br>
+                        Php <input type="checkbox" name="tecnologias" value="php">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Genero: (*)
+                    </td>
+                    <td>
+                        Hombre <input type="radio" name="genero" value="hombre">
+                        <br>
+                        Mujer<input type="radio" name="genero" value="mujer">
+                        <br>
+                        No Binario<input type="radio" name="genero" value="noBinario">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Ocupacion: (*)
+                    </td>
+                    <td>
+                        <select name="ocupacion" class="default"> 
+                            <option value="">Seleccionar</option>
+                            <option value="Programador">programador</option>
+                            <option value="Ingeniero">ingeniero</option>
+                            <option value="Profesor">Profesor</option>
+                            <option value="Desocupado">Desocupado</option>
+                            <option value="Jubilado">Jubilado</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Musica: 
+                    </td>
+                    <td>
+                        <select name="Musica" multiple class="default"> 
+                            <option value="">Seleccionar</option>
+                            <option value="reguetton">reguetton</option>
+                            <option value="rkt">Rkt</option>
+                            <option value="trap">trap</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Comentario: 
+                    </td>
+                    <td>
+                        <textarea name="comentario"  cols="30" rows="2" class="default" onfocus="this.select()" placeholder="Escribir un texto"></textarea>
+                    </td>
+                </tr>
+                <tr style="text-align: center">
+                    <td><input type="reset"></td>
+                    <td><input type="submit"></td>
+
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
