@@ -1,4 +1,15 @@
 # Learn-Java
  here is everything i have learned from java.
 
-## Content Table 
+## Content Table
+***
+* FundamentosJava
+* ProgramacionJava
+* JDBC
+* Servlets
+
+## Technologies
+***
+A list of technologies used within the project:
+* [Java]
+* [MySql]
