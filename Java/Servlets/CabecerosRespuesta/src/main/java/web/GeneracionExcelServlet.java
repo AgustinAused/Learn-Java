@@ -23,11 +23,11 @@ public class GeneracionExcelServlet extends HttpServlet{
       
       // desplegar informaciona la cliente 
       PrintWriter out = response.getWriter();
-      out.print("\tValores");
-      out.print("\t1");
-      out.print("\t2");
-      out.print("\t3");
-      out.print("\t4");
-      out.print("total\t=SUMA(b2:b5)");
+      out.print("Valores");
+      out.print("\n1");
+      out.print("\n2");
+      out.print("\n3");
+      out.print("\n4");
+      out.print("\ntotal\t=SUMA(a2:a5)");
     }
 }
