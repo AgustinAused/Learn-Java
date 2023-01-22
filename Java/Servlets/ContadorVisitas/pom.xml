@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ar.com.agus</groupId>
-    <artifactId>ContadorVistas</artifactId>
+    <artifactId>ContadorVisitas</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>ContadorVistas-1.0</name>
+    <name>ContadorVisitas</name>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

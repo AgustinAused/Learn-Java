@@ -31,3 +31,5 @@ replay_pid*
 /RecursosDeJava
 
 
+/Java/Servlets/ContadorVistas/target/
+/Java/Servlets/ContadorVisitas/target/
