@@ -24,7 +24,7 @@ public class ContadorServlet extends HttpServlet {
                 }
             }
         }
-        // incrementamos el cosntador en uno (que significa la visita del usuario)
+        // incrementamos el contador en uno (que significa la visita del usuario)
         contador++;
         // agregamos la respuesta al navegador 
         Cookie c = new Cookie("contadorVisitas", Integer.toString(contador));
@@ -37,7 +37,6 @@ public class ContadorServlet extends HttpServlet {
 
         // mandamos al navvegador el mensaje 
         response.setContentType("text/html;charset=UTF-8");
-
         PrintWriter out = response.getWriter();
         out.print("<h2> la cantidad de veces que visito la web es:" + contador + "</h2>");
         out.close();
