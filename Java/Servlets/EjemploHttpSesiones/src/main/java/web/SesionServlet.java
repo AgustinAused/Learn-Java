@@ -35,7 +35,10 @@ public class SesionServlet extends HttpServlet{
         
         // mandamos al respuesta al cliente 
         PrintWriter out = response.getWriter();
-        out.print("<h1></h1>");
+        out.print("<h1>" + titulo + "</h1>");
+        out.print("<br/>");
+        out.print("<p style='font-size:20px'> La cantidad de veces que ingreso a la web:" + contadorVisitas +"</p>" );
+        out.print("<p style='font-size:20px'> La Id de la session es:" + sesion.getId() +"</p>" );
         out.close();
         
         
