@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <titl> Hola Mundo JSP</title>
+    <title> Hola Mundo JSP</title>
     </head>
     <body>
         <h1>Hola mundo</h1>
