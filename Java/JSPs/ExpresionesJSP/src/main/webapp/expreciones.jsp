@@ -9,9 +9,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>JSP con Expresiones</title>
+
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>JSP con Expresiones</h1>
+        Contacatenacion: <%= "Saludo"+ " " + "JSPs" %>
+        <br>
+        Operacion matematica: <%= 2 * 4 / 2 * 5 %>
+        <br>
+        Session ID: <%= session.getId() %>
+        <hr>
+        <a href="index.html">Volver al Inicio </a>
     </body>
 </html>
