@@ -23,20 +23,18 @@
          <% 
             String nombreAplicacion = request.getContextPath();
             out.print("<h1>Nombre de la Aplicacion: " + nombreAplicacion + "</h1>");
-            out.print("<br>");
          %>
+         <br>
          <%--Scriptlet con codigo condicionado --%>
          <% 
             if (session != null && session.isNew() ){
-                out.print("<p style='font-size:20px'> La session es nueva</p>");
-            }
          %>
+         <p style="font-size:20px"> La session es nueva</p>
          <%
-            else{
-                out.print("<p style='font-size:20px'> La session No es nueva</p>");
-                }
+            }else{
          %>
-         
+         <p style="font-size:20px"> La session No es nueva</p>
+         <% } %>
         <p></p>
     </body>
 </html>
