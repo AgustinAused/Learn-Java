@@ -6,12 +6,24 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+<% 
+    String fondo = request.getParameter("colorFondo");
+    if (fondo == null || fondo.trim().equals("")){
+        fondo= "white";
+    }
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Ejemplpo Scriptlets JSPs</title>
+        <title> JSPs Cambio de color</title>
     </head>
-    <body>
-        <h1>Ejemplpo Scriptlets</h1>
+    <body bgcolor=<%= fondo%>>
+        <h1>JSPs Cambio de color</h1>
+        <br>
+        <br>
+        <p style="font-size: 16px;">Color de fondo: <%= fondo %></p>
+        <br>
+        <a href="index.html">Volver al Inicio</a>
     </body>
 </html>
