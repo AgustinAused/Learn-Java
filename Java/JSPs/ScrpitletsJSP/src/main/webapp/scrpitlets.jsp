@@ -9,9 +9,34 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>JSP con Scriptlets</title>
     </head>
     <body>
         <h1>Hello World!</h1>
+        <br>
+        <br>
+        <%-- Scriptlest para enviar informacion al navegador --%>
+        <%
+            out.print("Saludos Desde un Scriptlest");
+         %>
+         <%-- Scriptlest para manipular los ombjetos implicitos --%>
+         <% 
+            String nombreAplicacion = request.getContextPath();
+            out.print("<h1>Nombre de la Aplicacion: " + nombreAplicacion + "</h1>");
+            out.print("<br>");
+         %>
+         <%--Scriptlet con codigo condicionado --%>
+         <% 
+            if (session != null && session.isNew() ){
+                out.print("<p style='font-size:20px'> La session es nueva</p>");
+            }
+         %>
+         <%
+            else{
+                out.print("<p style='font-size:20px'> La session No es nueva</p>");
+                }
+         %>
+         
+        <p></p>
     </body>
 </html>
