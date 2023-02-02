@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package utilerias;
 
-/**
- *
- * @author Benjamin
- */
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Converciones {
+    private static final String FORMATO_FECHA = "dd-MM-yyyy";
     
+    public static String format(Date fecha){
+        SimpleDateFormat formateador = new SimpleDateFormat(FORMATO_FECHA);
+        return formateador.format(fecha);
+    }
 }
