@@ -5,10 +5,10 @@
 --%>
 <%-- importamos las clases que vamos a usar --%>
 <%@page import="utilerias.Converciones, java.util.Date" %>
-<%@page contentType="application./vnd.ms-excel" %>
+<%@page contentType="application/vnd.ms-excel" %>
 <%
     String nombreArchivo = "reporte.xls";
-    response.setHeader("Content-Disposition", "attachment;filename"+ nombreArchivo);
+    response.setHeader("Content-Disposition", "attachment;filename="+ nombreArchivo);
     %>
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,7 @@
     <body>
         <h1>Reporte de Excel</h1>
         <br>
-        <table>
+        <table border="1">
             <!-- Añadimos los campos para agregar en las columnas -->
             <tr>
                 <th>Curso</th>
