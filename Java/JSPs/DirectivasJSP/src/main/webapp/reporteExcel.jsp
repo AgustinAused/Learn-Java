@@ -4,6 +4,7 @@
     Author     : Agustin
 --%>
 <%-- importamos las clases que vamos a usar --%>
+<%@page errorPage="/WEB-INF/manejoErrores.jsp" %>
 <%@page import="utilerias.Converciones, java.util.Date" %>
 <%@page contentType="application/vnd.ms-excel" %>
 <%
@@ -13,7 +14,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+
         <title>Reporte de Excel</title>
     </head>
     <body>
@@ -30,7 +31,7 @@
             <tr>
                 <td>1. Fundamentos de Java</td>
                 <td>Aprendemos las sintaxis basicas de java</td>
-                <td><%= Converciones.format(new Date()) %></td>
+                <td><%= Converciones.format("500") %></td>
             </tr>
             <!-- Agregamos una fila -->
             <tr>
