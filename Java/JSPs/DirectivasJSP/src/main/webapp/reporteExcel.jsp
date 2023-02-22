@@ -9,7 +9,7 @@
 <%@page contentType="application/vnd.ms-excel" %>
 <%
     String nombreArchivo = "reporte.xls";
-    response.setHeader("Content-Disposition", "attachment;filename="+ nombreArchivo);
+    response.setHeader("Content-Disposition", "inline;filename="+ nombreArchivo);
     %>
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@
             <tr>
                 <td>1. Fundamentos de Java</td>
                 <td>Aprendemos las sintaxis basicas de java</td>
-                <td><%= Converciones.format("500") %></td>
+                <td><%= Converciones.format(new Date()) %></td>
             </tr>
             <!-- Agregamos una fila -->
             <tr>
