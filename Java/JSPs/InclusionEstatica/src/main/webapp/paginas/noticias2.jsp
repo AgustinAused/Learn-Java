@@ -1,17 +1,3 @@
-<%-- 
-    Document   : noticias2
-    Created on : 8 mar 2023, 11:30:25
-    Author     : Agustin
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<!-- no hace falta agregar los tags de inicio  de html -->
+<h4>Universidad Java</h4>
+<a href="https://twitch.com" target="_blank"> link a Twitch</a>
