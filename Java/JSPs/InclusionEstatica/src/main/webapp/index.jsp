@@ -13,5 +13,12 @@
     </head>
     <body>
         <h1>Ejemplo Inclusion Estatica</h1>
+        
+        <ul>
+            <li><%@include file="paginas/noticias1.html"  %></li>
+            <li><%@include file="paginas/noticias2.jsp"  %></li>
+            <li>third</li>
+        </ul>
+
     </body>
 </html>
