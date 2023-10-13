@@ -14,6 +14,9 @@
     <body>
         <h1>Ejemplo Inclusion Estatica</h1>
         <br><!-- comment -->
-        
+        <ul>
+            <li><%@include  file="paginas/noticias1.html" %></li>
+            <li><%@include  file="paginas/noticias2.jsp"%></li>
+        </ul>
     </body>
 </html>

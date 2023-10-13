@@ -11,9 +11,6 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <ul>
-            <li><%@include  file="paginas/noticias1.html" %></li>
-            <li><%@include  %></li>
-        </ul>
+        
     </body>
 </html>
